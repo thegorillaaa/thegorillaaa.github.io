@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+    
+}
+
+/* Colors */
+header, .intro, footer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(images/summer2020.jpeg) no-repeat center center fixed;
+    background-size: cover; 
+    color: #f9faf8;
+    text-shadow:0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px #6d6155; 
+}
+
+
+header, .intro{
+    display: flex;
+    width:100%;
+    align-self: stretch;
+    align-items: center;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    gap:15%;
+}
+
+.logo {
+    font-size: 24px;
+    font: bold;
+    font-family: Georgia, Garamond;
+}
+
+.main h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-bottom: -16px;
+}
+
+.sidekick-text, li {
+    color:#e5e7eb;
+    font-size: 18px;
+}
+
+.sidekick-text2 {
+    color: #f9faf8;
+    text-shadow:0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px #6d6155; 
+    font-size: 18px;
+    display: inline;
+}
+
+header ul {
+    display:flex;
+    gap:16px;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+a:hover {
+    color: #9c9f85;
+}
+
+.intro{
+    height:100vh;
+    gap:32px;
+}
+
+.intro-text {
+    margin-left:15%;
+    display:flex;
+    flex-flow: column wrap;
+    flex:1;
+}
+
+.image {
+    flex:1;
+    display:flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items:center;
+    color:#1F2937;
+    margin-top: 40px;
+    margin-right: 15%;
+    min-width:300px;
+    max-height:100%;
+    overflow: hidden;
+
+}
+
+img {
+    width:100%;
+}
+
+.main {
+
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #30332d;
+    color: #f9faf8;
+    flex-flow: column wrap;
+}
+.content {
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.content h2{
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow:0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px #6d6155; 
+
+}
+
+.cards {
+    display:flex;
+    justify-content: space-around;
+    gap:32px;
+    flex-flow: row wrap;
+}
+
+
+
+.card {
+    max-width: 150px;
+    color: #1f293700;
+    transition:ease-in .7s;
+}
+
+.card:hover {
+    color: #f9faf8;
+}
+
+.content-img1 {
+    width:144px;
+    height:144px;
+    border: 4px solid #504f44;
+    background: url(images/github.png);
+    background-size: cover;
+    background-color: #dee2e6;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img2 {
+    width:144px;
+    height:144px;
+    border: 4px solid #504f44;
+    background: url(images/resume.png);
+    background-size: cover;
+    background-color: #dee2e6;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img3 {
+    width:144px;
+    height:144px;
+    border: 4px solid #504f44;
+    background: url(images/linkdin.png);
+    background-size: cover;
+    background-color: #dee2e6;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img4 {
+    width:144px;
+    height:144px;
+    border: 4px solid #504f44;
+    background: url(images/email.png);
+    background-size: cover;
+    background-color: #dee2e6;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+
+.content-img:hover {
+    transform:scale(1.05);
+}
+
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0px;
+    align-self: stretch;
+}
+
+
+@media only screen and (max-width: 783px){
+    .intro-text {
+        margin-right: 15%;
+        align-items: center;
+    }
+    .image {
+        margin-left: 15%;
+        height: 200px;
+    }
+    
+    .card {
+        color: #f9faf8;
+    }
+}
+
+
+@media only screen and (max-width: 561px){
+
+    .quote {
+        padding: 32px 25%;
+    }
+}
+
+@media only screen and (max-width: 346px){
+header ul {
+    margin-right: 10%;
+}
+   
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+.pcenter {
+    text-align: center;
+}
